@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Secular One', sans-serif;
+}
+
+h1{
+  color: #ff6565;
+  text-align: center;
+  border: 2px;
+  text-indent: 15;
+  padding-top: 30px;
+  animation: anim 1s linear infinite;
+}
+
+h2{
+  color: #00a2ff;
+  text-align: center;
+  border: 5px;
+  text-indent: 15;
+  padding-top: 30px;
+  animation: anim 1s linear infinite;
+}
+
+h3{
+  font-size: 4.5rem;
+  color:#0073ffdd;
+  text-align: center;
+  border: 2px;
+  padding-top: 30px;
+  animation: anim 1s linear infinite;
+}
+
+h4{
+  font-size: 4.5rem;
+  color:#974400;
+  text-align: center;
+  border: 2px;
+  padding-top: 0px;
+  animation: anim 1s linear infinite;
+}
+
+.contact .row form{
+    flex:1 1 55rem;
+    background:#00ffb3f5;
+    padding:0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(252, 0, 0, 0.521);
+    border-radius: .5rem;
+}
+
+.contact .row .map{
+    flex:1 1 25rem;
+    border:1rem solid #eeb4b4;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.contact .row form .box,
+.contact .row form textarea{
+    width: 100%;
+    border-bottom: .1rem solid #ffffff;
+    color:#ff1966;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--main-color);
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact .row form .btn{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.heading{
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  color:#ec704a;
+  text-transform: uppercase;
+  align-items: center;
+  
+}
+
+/* .heading span{
+  color:var(--main-color);
+  text-transform: uppercase;
+} */
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:.8rem 3rem;
+  background:var(--main-color);
+  color:#ff0000;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:#ffcbe9;
+  letter-spacing: .2rem;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; bottom:0;
+  background:#79b5ffdd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  flex-flow: column;
+  padding:8rem 2rem;
+  width:30rem;
+  text-align: center;
+}
+
+header .logo{
+  text-transform: uppercase;
+  color:#f6f1f1;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+/* 
+header .logo span{
+  text-transform: uppercase;
+  color:var(--main-color);
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-panel {
+  background-color: rgb(255, 0, 106);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+  
+.nav-panel .web-name {
+  text-decoration: none;
+  margin-left: 35px;
+  color: rgb(0, 255, 55);
+  cursor: pointer;
+  
+}
+
+.nav-panel .web-name:hover {
+  color: rgb(0, 0, 0);
+}
+
+.nav-panel .nav-links {
+  list-style: none;
+  display: flex;
+}
+/* 
+.nav-links #firstname {
+	margin-left: 10px;
+} */
+
+.nav-panel .nav-links .link {
+  text-decoration: none;
+  margin-right: 35px;
+  color: rgb(21, 255, 0);
+}
+
+.nav-panel .nav-links .link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-panel .open-menu, .close-menu {
+  color: rgb(255, 255, 255);
+}
+
+.nav-panel .open-menu {
+  font-size: 1.3rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-panel .close-menu {
+  font-size: 1.3rem;
+  display: none;
+  cursor: pointer;
+}
+
+.container-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 450px;
+  height: 600px;
+  margin: 150px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 450px;
+  height: 450px;
+  margin-top: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.form h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form input {
+  width: 300px;
+  padding: 15px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form .submit-btn {
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(255, 0, 0);
+  font-size: 1.1rem;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.form .submit-btn:hover {
+  background-color: rgba(116, 204, 0, 0.753);
+}
+
+.form .account-exist, .no-account {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.form .register {
+  text-decoration: none;
+  margin-left: 5px;
+  color: rgb(255, 0, 85);
+  transition: .5s;
+}
+
+.form .register:hover {
+  text-decoration: none;
+  margin-left: 5px;
+  color: rgb(0, 255, 157);
+}
+
+.form .login {
+  text-decoration: none;
+  margin-left: 5px;
+  color: orange;
+  transition: .5s;
+}
+
+.form .login:hover {
+  text-decoration: none;
+  margin-left: 5px;
+  color: rgb(186, 124, 8);
+}
+
+.error {
+  color: red;
+  display: block;
+  text-align: left;
+}
+
+.success-message {
+  background-color: green;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.error-message {
+  background-color: red;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.greetings {
+  margin-top: 150px;
+}
+
+.logout-btn {
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: .5s;
+  margin-right: 35px;
+}
+
+.logout-btn:hover {
+  color: rgb(103, 101, 101);
+}
